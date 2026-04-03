@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANITY RP | IL CODICE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #D4AF37; --bg: #050505; --panel: rgba(20, 20, 20, 0.95); }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; background: var(--bg); color: #ccc;
+            font-family: 'Montserrat', sans-serif;
+            background-image: radial-gradient(circle at center, #1a1505 0%, #050505 100%);
+            display: flex; flex-direction: column; height: 100vh; overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 50px; border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(0,0,0,0.8);
+        }
+        h1 { font-family: 'Cinzel', serif; color: var(--gold); margin: 0; font-size: 1.5em; letter-spacing: 4px; }
+        .back-link { color: var(--gold); text-decoration: none; font-size: 0.8em; border: 1px solid var(--gold); padding: 5px 15px; }
+
+        /* Main Layout */
+        .main-container { display: flex; flex: 1; overflow: hidden; }
+
+        /* Sidebar Nav */
+        .sidebar {
+            width: 280px; background: rgba(10,10,10,0.9);
+            border-right: 1px solid rgba(212,175,55,0.1);
+            overflow-y: auto; padding: 20px 0;
+        }
+        .nav-item {
+            padding: 15px 25px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;
+        }
+        .nav-item:hover { background: rgba(212, 175, 55, 0.1); color: var(--gold); }
+        .nav-item.active { background: var(--gold); color: #000; font-weight: 700; }
+
+        /* Content Area */
+        .content-area { flex: 1; padding: 40px; overflow-y: auto; scroll-behavior: smooth; }
+        .section { display: none; animation: fadeIn 0.5s ease; }
+        .section.active { display: block; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        h2 { font-family: 'Cinzel', serif; color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 10px; margin-bottom: 30px; }
+        h3 { color: var(--gold); margin-top: 30px; font-size: 1.1em; text-transform: uppercase; border-left: 3px solid var(--gold); padding-left: 15px; }
+        
+        .rule-box { background: rgba(255,255,255,0.03); padding: 20px; border-radius: 4px; margin-bottom: 15px; line-height: 1.6; }
+        .highlight { color: var(--gold); font-weight: 600; }
+        .danger { color: #ff4444; font-weight: 700; border: 1px solid #ff4444; padding: 15px; margin: 20px 0; }
+
+        /* Tabelle */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9em; }
+        th, td { border: 1px solid rgba(212,175,55,0.2); padding: 12px; text-align: left; }
+        th { background: rgba(212, 175, 55, 0.1); color: var(--gold); }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-thumb { background: var(--gold); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VANITY CODE</h1>
+        <a href="index.html" class="back-link">TORNA ALLA HOME</a>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="nav-item active" onclick="showSection('rp-basi')">🔹 Regole Base</div>
+            <div class="nav-item" onclick="showSection('generale')">📜 Generale</div>
+            <div class="nav-item" onclick="showSection('rapine')">🔫 Rapine & Assalti</div>
+            <div class="nav-item" onclick="showSection('perma')">💀 Morte & Perma</div>
+            <div class="nav-item" onclick="showSection('fdo')">🚔 Forze dell'Ordine</div>
+            <div class="nav-item" onclick="showSection('criminali')">🥷 Gang & Mafia</div>
+            <div class="nav-item" onclick="showSection('lavori')">🏢 Lavori & Attività</div>
+            <div class="nav-item" onclick="showSection('tecnico')">🚸 Tecnico & SS</div>
+        </div>
+
+        <div class="content-area">
+            
+            <div id="rp-basi" class="section active">
+                <h2>🔹 REGOLAMENTO ROLEPLAY</h2>
+                <div class="rule-box"><span class="highlight">FAILRP:</span> Compiere azioni che non rispettano le regole RP.</div>
+                <div class="rule-box"><span class="highlight">REVENGE KILL (RK):</span> Uccidere chi ti ha ucciso per vendetta dopo il respawn.</div>
+                <div class="rule-box"><span class="highlight">VDM / RDM:</span> Vietato investire o uccidere senza motivo valido e interazione.</div>
+                <div class="rule-box"><span class="highlight">NOFEAR:</span> Mancata simulazione della paura (es. non fermarsi con armi puntate).</div>
+                <div class="rule-box"><span class="highlight">METAGAME:</span> Uso di info OOC (Discord/Stream) in gioco.</div>
+                <div class="rule-box"><span class="highlight">POWERGAME / POWERPLAY:</span> Azioni impossibili o invenzione di tecnologie inesistenti.</div>
+                <div class="rule-box"><span class="highlight">COMBATLOG:</span> Quittare durante un'azione. (In/Out).</div>
+            </div>
+
+            <div id="generale" class="section">
+                <h2>📜 REGOLAMENTO GENERALE</h2>
+                <div class="danger">
+                    NON SARANNO TOLLERATE PAROLE RAZZISTE, MANCANZA DI EDUCAZIONE O OFFESE SESSUALI. 
+                    <br>PENA: <span style="text-decoration:underline">BAN PERMANENTE IMMEDIATO</span>.
+                </div>
+                <div class="rule-box">
+                    • <span class="highlight">GOPRO:</span> Valida solo se ruolata con "/me rompe scheda" o "/me accende".<br>
+                    • <span class="highlight">MEDICI:</span> Dopo rianimazione, obbligo di ruolare dolore per 2 minuti.<br>
+                    • <span class="highlight">STREAMING:</span> Rispettare le regole Twitch. I VOD possono essere usati dallo staff.
+                </div>
+            </div>
+
+            <div id="rapine" class="section">
+                <h2>🔫 RAPINE & FURTI</h2>
+                <table>
+                    <tr><th>TIPO</th><th>PLAYER</th><th>ARMI</th><th>NOTE</th></tr>
+                    <tr><td>Negozietto</td><td>2 vs 2</td><td>Pistole</td><td>No Fuga in Moto</td></tr>
+                    <tr><td>Fleeca</td><td>4 vs 4</td><td>SMG</td><td>Max 1 Ostaggio</td></tr>
+                    <tr><td>Pacific</td><td>15 vs 16</td><td>Carabine</td><td>Min 2 Ostaggi</td></tr>
+                </table>
+                <h3>Assalti & Zone Safe</h3>
+                <div class="rule-box">
+                    • <span class="highlight">Zone Safe:</span> Ospedali, Garage, Negozi, Chiese. Vietato ingaggiare o rapire.<br>
+                    • <span class="highlight">Assalti Fazioni:</span> Richiedono ticket e 48h di tempo per l'esecuzione.
+                </div>
+            </div>
+
+            <div id="perma" class="section">
+                <h2>💀 PERMADEATH E WIPE</h2>
+                <div class="rule-box">
+                    • <span class="highlight">Richiesta Perma:</span> Via ticket con 10 motivazioni valide. Approvazione in 12-72h.<br>
+                    • <span class="highlight">Wipe Mentale:</span> Obbligatorio all'uscita da Polizia/FIB/DEA.<br>
+                    • <span class="highlight">Eredità:</span> Testamento concesso solo se coerente e approvato da staff.
+                </div>
+            </div>
+
+            <div id="fdo" class="section">
+                <h2>🚔 FORZE DELL'ORDINE</h2>
+                <h3>LSPD / FIB / DEA / IAA</h3>
+                <div class="rule-box">
+                    • <span class="highlight">Bodycam:</span> Obbligatoria per tutto il servizio.<br>
+                    • <span class="highlight">Corruzione:</span> Vietata per reclute e alto comando. Richiede ticket e 30gg di servizio.<br>
+                    • <span class="highlight">Hacking:</span> FIB/DEA/IAA possono decriptare 1 messaggio anonimo al giorno (5 min scene).
+                </div>
+                <h3>Rapporto con i Ghetti</h3>
+                <p>La polizia deve mostrare fear nel South. Irruzioni solo con prove e autorizzazione Admin.</p>
+            </div>
+
+            <div id="criminali" class="section">
+                <h2>🥷 GANG & MAFIA</h2>
+                <h3>Il Cartello</h3>
+                <p>Autorità suprema. Gestisce monopolio armi e pizzo. L'assalto al Cartello comporta Permadeath.</p>
+                <h3>Gang & Mafie</h3>
+                <div class="rule-box">
+                    • <span class="highlight">Gang:</span> Minimo 6 player. Devono presidiare una zona.<br>
+                    • <span class="highlight">Mafia:</span> Minimo 10 player. Può avere max 2 gang sotto di sé.<br>
+                    • <span class="highlight">DriveBy:</span> Solo da moto/bici. Vietato colpire persone (solo edifici/auto).
+                </div>
+            </div>
+
+            <div id="lavori" class="section">
+                <h2>🏢 LAVORI & ATTIVITÀ</h2>
+                <div class="rule-box">
+                    • <span class="highlight">Proprietari:</span> Obbligo apertura 3h/giorno (6h per Import/Armerie).<br>
+                    • <span class="highlight">Lavori No WL:</span> Vietato rapinare player mentre lavorano.<br>
+                    • <span class="highlight">Governo:</span> Governatore e Procuratore sono incorruttibili.
+                </div>
+            </div>
+
+            <div id="tecnico" class="section">
+                <h2>🚸 TECNICO & SS TEAM</h2>
+                <div class="danger">
+                    QUITTARE O FAKE-CRASH DURANTE CHIAMATA ASSISTENZA = <span class="highlight">PERMABAN</span>.
+                </div>
+                <div class="rule-box">
+                    • <span class="highlight">Obbligo Clip:</span> Per player sospetti, uso spoofer o ban precedenti.<br>
+                    • <span class="highlight">Anticheat:</span> Vietati Citizen modificati, damage boost, no-bush o macro latenza.<br>
+                    • <span class="highlight">Economia:</span> Sopra i 5M bisogna giustificare la provenienza (controlli OOC).
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function showSection(id) {
+            // Nasconde tutte le sezioni
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            // Disattiva tutti i bottoni
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            
+            // Attiva quella cliccata
+            document.getElementById(id).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANITY RP | DONAZIONI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #D4AF37; --bg: #050505; --card: rgba(15, 15, 15, 0.98); --ds: #5865F2; }
+        * { box-sizing: border-box; }
+        
+        body {
+            margin: 0; background-color: var(--bg); color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            background-image: radial-gradient(circle at center, #1a1505 0%, #050505 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center; padding: 40px 20px;
+            background: rgba(0,0,0,0.8);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        h1 { font-family: 'Cinzel', serif; color: var(--gold); letter-spacing: 6px; margin: 0; font-size: 2em; }
+        
+        .nav-bar { margin-top: 15px; }
+        .nav-bar a { color: var(--gold); text-decoration: none; margin: 0 10px; font-size: 0.7em; letter-spacing: 2px; text-transform: uppercase; opacity: 0.7; transition: 0.3s; }
+        .nav-bar a:hover { opacity: 1; text-shadow: 0 0 10px var(--gold); }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+
+        .disclaimer-top {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid var(--gold);
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--card);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 40px 30px;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .product-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+        }
+
+        .role-badge {
+            color: var(--gold);
+            font-size: 0.7em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .product-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5em; color: #fff;
+            margin: 10px 0; letter-spacing: 2px;
+        }
+
+        .features-list {
+            list-style: none; padding: 0; margin: 25px 0;
+            text-align: left; font-size: 0.85em; color: #ccc;
+        }
+
+        .features-list li {
+            padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+
+        .features-list li b { color: var(--gold); }
+
+        .price-info {
+            font-size: 0.8em; color: var(--gold);
+            margin: 20px 0; letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .discord-btn {
+            display: inline-block; width: 100%; padding: 15px;
+            background: var(--ds); color: #fff;
+            text-decoration: none; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px;
+            font-size: 0.75em; transition: 0.3s;
+            border-radius: 4px;
+        }
+
+        .discord-btn:hover { background: #4752c4; box-shadow: 0 0 20px rgba(88, 101, 242, 0.4); }
+
+        .discord-callout {
+            margin-top: 60px;
+            padding: 45px;
+            background: rgba(88, 101, 242, 0.05);
+            border: 1px solid var(--ds);
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .discord-callout h2 { font-family: 'Cinzel'; color: var(--ds); margin-bottom: 15px; }
+        .discord-callout p { line-height: 1.8; max-width: 800px; margin: 0 auto; opacity: 0.9; }
+
+        .footer-note {
+            text-align: center; margin-top: 50px;
+            opacity: 0.3; font-size: 0.7em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VANITY STORE</h1>
+        <div class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="regole.html">Regole</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="disclaimer-top">
+            <span style="color:var(--gold); font-weight: 700; font-family: 'Cinzel';">Sostieni l'Impero</span><br>
+            Tutti i sostenitori ricevono il grado <span style="color:var(--gold)">DONATORE</span>. 
+            Il server è <b>NO PAY-TO-WIN</b>: le donazioni sbloccano personalizzazioni estetiche, veicoli e immobili.
+        </div>
+
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <span class="role-badge">Grado Donatore</span>
+                <div class="product-name">SUPPORT PACK</div>
+                <ul class="features-list">
+                    <li>✦ Coda prioritaria <b>Livello 1</b></li>
+                    <li>✦ 1x <b>Veicolo Import</b> (Base)</li>
+                    <li>✦ Ruolo Discord <b>Donatore</b></li>
+                </ul>
+                <div class="price-info">Prezzo via Ticket</div>
+                <a href="https://discord.gg/5KrsHXcYHC" class="discord-btn">Apri Ticket Donazioni</a>
+            </div>
+
+            <div class="product-card" style="border-color: var(--gold);">
+                <span class="role-badge">Grado Donatore Elite</span>
+                <div class="product-name">ELITE PACK</div>
+                <ul class="features-list">
+                    <li>✦ Coda prioritaria <b>MASSIMA</b></li>
+                    <li>✦ 1x <b>Casa/Villa</b> Custom</li>
+                    <li>✦ 2x <b>Veicoli Import</b> (Sport)</li>
+                </ul>
+                <div class="price-info">Prezzo via Ticket</div>
+                <a href="https://discord.gg/5KrsHXcYHC" class="discord-btn">Apri Ticket Donazioni</a>
+            </div>
+
+            <div class="product-card">
+                <span class="role-badge">Grado Donatore Gold</span>
+                <div class="product-name">VANITY PACK</div>
+                <ul class="features-list">
+                    <li>✦ Coda prioritaria <b>V.I.P.</b></li>
+                    <li>✦ <b>Villa Luxury</b> con Garage</li>
+                    <li>✦ 3x <b>Veicoli Import</b> (Hypercar)</li>
+                </ul>
+                <div class="price-info">Prezzo via Ticket</div>
+                <a href="https://discord.gg/5KrsHXcYHC" class="discord-btn">Apri Ticket Donazioni</a>
+            </div>
+
+        </div>
+
+        <div class="discord-callout">
+            <h2>CATALOGO COMPLETO (500+ OGGETTI)</h2>
+            <p>
+                Questi pacchetti mostrano solo l'<b>1%</b> dei contenuti disponibili. 
+                Abbiamo centinaia di veicoli, skin e ville esclusive non elencate sul sito.
+            </p>
+            <p style="margin-top: 20px; font-weight: 700;">
+                PER PAGARE E CONSULTARE IL CATALOGO:<br>
+                1. Entra nel nostro Discord.<br>
+                2. Apri un <span style="color:var(--ds)">TICKET DONAZIONI</span>.<br>
+                3. Chiedi il prezzo dell'oggetto desiderato allo Staff.
+            </p>
+            <br>
+            <a href="https://discord.gg/5KrsHXcYHC" class="discord-btn" style="width: auto; padding: 15px 40px;">UNISCITI AL DISCORD</a>
+        </div>
+
+        <div class="footer-note">
+            VANITY RP - TUTTE LE DONAZIONI SONO DESTINATE AL MANTENIMENTO DEL SERVER.
+        </div>
+    </div>
+
+</body>
+</html>

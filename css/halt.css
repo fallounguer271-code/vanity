@@ -1,0 +1,265 @@
+/* PLACE YOUR CUSTOM STYLES IN THIS FILE */
+
+:root{
+    --principal: #fb0000;
+}
+
+.textline1 {
+    color: #fb0000;
+    font-size: 3rem;
+}
+
+.btnhalt {
+    background-color: #fb0000;
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    border: solid 1px #fb0000;
+    border-radius: .3rem;
+    transition: .5s !important;
+}
+
+.btnhalt:hover {
+    background-color: transparent;
+    border: solid 1px #fb0000;
+    color: #fb0000 !important;
+    transition: .5s !important;
+}
+
+.imghaltindex {
+    background-color: transparent;
+    filter: none !important;
+}
+
+#imgheader {
+    width: 6rem !important;
+    position: absolute;
+    left: 7vw;
+}
+
+#haltnav {
+    background-color: #fbb00007;
+
+}
+
+.mpl-navbar .mpl-navbar-brand>a {
+    width: 5rem !important;
+}
+
+.servidor {
+    height: 3rem;
+    position: absolute;
+    top: 0%;
+    z-index: 9999999999999999999999999999;
+    width: 100%;
+    background-color: #fb0000;
+}
+
+.servidor span {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.servidor span h1 {
+    font-size: 1.5rem;
+    margin-top: 1.8rem;
+    color: black;
+}
+
+#hovera {
+    color: black !important;
+}
+
+#hovera:hover {
+    color: white !important;
+}
+
+#discordbtn {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: #fb0000;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    color: black;
+    font-weight: 600;
+    border: 1px solid #fb0000;
+    transition: .5s;
+    margin-top: 2rem;
+}
+
+#discordbtn:hover {
+    background-color: transparent;
+    color: #fb0000;
+    border: solid 1px #fb0000;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#stats{
+    width: 100%;
+    margin-top: 5rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    padding-block: 5rem;
+    z-index: 99999999999999;
+}
+
+#stats .top{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#stats .top .desc{
+    height: 15rem;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#stats .top .desc h2{
+    font-size: 1.5rem;
+}
+
+#stats .top .desc p {
+    font-size: 1.2rem;
+}
+
+
+#stats .top h1 {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #fb0000;
+}
+
+#stats .top h1::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #fb0000;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.nivelstats{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nivelstats .line{
+    height: 100%;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.nivelstats .line h2 {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.nivelstats .line img{
+    height: 2rem;
+}
+
+.boxs{
+    padding-inline: 25rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    gap: 2rem;
+}
+
+.boxs .status{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: ease-in-out .3s;
+    box-shadow: 0 0.5px 10px rgb(153, 134, 50);
+    border: 1px solid #fb0000;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    height: 64px;
+    width: 265px;
+    gap: .5rem;
+}
+
+.boxs .status img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.boxs .status span h1{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.boxs .status span h2{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 12px;
+    
+}
+
+.boxs .status span{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+#iframevideo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1%;
+}
+
+.halth1{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fb0000;
+    letter-spacing: 0.01em;
+    font-size: 4rem;
+}

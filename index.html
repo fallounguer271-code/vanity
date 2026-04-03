@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANITY RP | THE BEST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; padding: 0;
+            background-color: #050505; 
+            color: #D4AF37; 
+            font-family: 'Montserrat', sans-serif;
+            display: flex; align-items: center; justify-content: center;
+            height: 100vh; overflow: hidden;
+            background-image: radial-gradient(circle at center, #1a1505 0%, #050505 100%);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); filter: blur(10px); }
+            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+
+        .container {
+            animation: fadeIn 1.2s ease-out;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 30px;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(15px);
+            border-radius: 2px;
+            width: 95%;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 1), inset 0 0 20px rgba(212, 175, 55, 0.05);
+            position: relative;
+        }
+
+        .container::before, .container::after {
+            content: ''; position: absolute; left: 25%; width: 50%; height: 2px; background: #D4AF37;
+        }
+        .container::before { top: 0; box-shadow: 0 0 15px #D4AF37; }
+        .container::after { bottom: 0; box-shadow: 0 0 15px #D4AF37; }
+
+        .logo {
+            width: 150px; height: 150px;
+            object-fit: contain;
+            margin-bottom: 5px;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2em;
+            margin: 10px 0 0 0;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            color: #D4AF37;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+
+        .subtitle {
+            font-size: 0.7em;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fff;
+            opacity: 0.5;
+        }
+
+        /* Tasti */
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 0;
+            width: 100%;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8em;
+            transition: 0.4s;
+        }
+
+        /* Bottone Sito PRINCIPALE */
+        .btn-main {
+            background: #D4AF37;
+            color: #000;
+            border: 1px solid #D4AF37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        .btn-main:hover {
+            background: #fff;
+            border-color: #fff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Bottone Login / Discord */
+        .btn-alt {
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-alt:hover {
+            border-color: #D4AF37;
+            color: #D4AF37;
+        }
+
+        .partner-box {
+            margin-top: 25px;
+            font-size: 0.65em;
+            letter-spacing: 2px;
+            color: #444;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 15px;
+        }
+
+        .partner-link {
+            color: rgba(212, 175, 55, 0.6);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .partner-link:hover { color: #D4AF37; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="vanitygif.gif" alt="VANITY" class="logo">
+        
+        <h1>VANITY</h1>
+        <div class="subtitle">Official Empire</div>
+
+        <div class="btn-group">
+            <a href="shop.html" class="btn btn-main">Enter the Shop</a>
+            <a href="login.html" class="btn btn-alt">Sign In</a>
+            <a href="https://discord.gg/5KrsHXcYHC" target="_blank" class="btn btn-alt">Join Community</a>
+        </div>
+
+        <div class="partner-box">
+            SUPPORTED BY <a href="https://discord.gg/f9xysfPBq2" target="_blank" class="partner-link">ATOMSYNC</a>
+            <div style="margin-top:8px; opacity: 0.3; font-size: 0.9em;">FALLU EDITION © 2026</div>
+        </div>
+    </div>
+
+</body>
+</html>
